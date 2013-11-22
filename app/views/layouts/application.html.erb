@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsChat</title>
+  <%= stylesheet_link_tag    "application", "pusher-realtime-chat-widget/src/pusher-chat.css", :media => "all" %>
+  <%= javascript_include_tag "http://code.jquery.com/jquery-1.7.1.min.js",
+  							 "http://js.pusher.com/2.1/pusher.min.js",
+  							 "pusher-realtime-chat-widget/src/js/PusherChatWidget.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
