@@ -9,6 +9,7 @@ gem 'rails'
 group :test, :development do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+  # gem "better_errors"
 end
 
 #Postgress for Heroku deployment
@@ -29,9 +30,7 @@ end
 #Pusher gem for the chat
 gem 'pusher'
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
