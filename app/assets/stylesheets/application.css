@@ -11,3 +11,38 @@
  *= require_self
  *= require_tree .
  */
+
+  html {
+    background: #06A2CB;
+    color: white;
+  }
+  .login_div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 30px;
+    background: #DD1E2F;
+    border-radius: 8px 8px 8px 8px;
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    /*box-shadow: 10px 10px 5px #000000;*/
+  }
+
+  .popup_login, .login_div {
+  -webkit-animation: cssAnimation 1.6048s 1 ease;
+  -moz-animation: cssAnimation 1.6048s 1 ease;
+  -o-animation: cssAnimation 1.6048s 1 ease;
+  }
+  @-webkit-keyframes cssAnimation {
+  from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -webkit-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
+  }
+  @-moz-keyframes cssAnimation {
+  from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -moz-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
+  }
+  @-o-keyframes cssAnimation {
+  from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -o-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
+  }
