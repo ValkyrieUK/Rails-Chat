@@ -5,13 +5,12 @@ RailsChat::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-  root :to => 'main#index'
 
     get "log_out" => "sessions#destroy", :as => "log_out"
     get "log_in" => "sessions#new", :as => "log_in"
     get "sign_up" => "users#new", :as => "sign_up"
     root :to => "users#new"
-    resources :user
+    resources :users
     resources :sessions
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
