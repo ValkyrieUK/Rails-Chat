@@ -18,19 +18,19 @@
       <fieldset>
 
         <p><%= f.label :username %></p>
-        <p><%= f.text_field :username %>
+        <p><%= f.text_field :username, placeholder: 'username' %>
 
         <p><%= f.label :email %></p>
-        <p><%= f.email_field :email %></p>
+        <p><%= f.email_field :email, placeholder: 'example@example.com' %></p>
 
         <p><%= f.label :password %></p>
-        <p><%= f.password_field :password %></p>
+        <p><%= f.password_field :password, placeholder: '********' %></p>
 
         <p><%= f.label :password_confirmation %></p>
-        <p><%= f.password_field :password_confirmation %>
+        <p><%= f.password_field :password_confirmation, placeholder: '********' %>
 
         <p><%= f.submit 'Sign up' %></p>
-        <p><%= link_to 'or log in', log_in_path %></p>
+        <p><%= link_to 'or log in', log_in_path, id: 'alt-button' %></p>
 
             <% end %>
       </fieldset>

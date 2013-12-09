@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
 
-def logged_in
-  if current_user 
-    redirect_to log_out_path
-  end
+def show
+  @user = User.find(current_user[:id])
+end
+
+def index
+ @users = User.all
 end
 
 def new

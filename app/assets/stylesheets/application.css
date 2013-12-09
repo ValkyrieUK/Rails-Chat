@@ -28,6 +28,13 @@
 
 /* ---------- FONTAWESOME ---------- */
 
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round'), local('VarelaRound-Regular'), url(http://themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
@@ -135,6 +142,95 @@ input {
   width: 100px;
 }
 
+#alt-button {
+  background-color: #33cc77;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+#alt-button:hover {
+  background-color: #28ad63;
+}
+
 #login fieldset input[type="submit"]:hover {
   background-color: #28ad63;
+}
+
+#navbar {
+  background-color: #f95252;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#settings-menu {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+}
+
+#greeting {
+  position: absolute;
+  top: 0.2%;
+  right: 5%;
+  font-size: 0.5em;
+}
+
+.user-cards {
+  background-color: #f95252;
+  width: 200px;
+  border-radius: 20px;
+  margin: 10px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+} 
+
+.user-cards h1{
+  font-weight: bold;
+} 
+
+.profile-card {
+  background-color: #f95252;
+  width: 200px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card-image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.window {
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 90%;
+  background-color: #f95252;
 }

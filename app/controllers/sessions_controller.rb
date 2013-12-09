@@ -1,7 +1,9 @@
 class SessionsController < ApplicationController
+
   def new
+    redirect_to profile_path if current_user
   end
-  
+
   def create
     user = User.authenticate(params[:email], params[:password])
     if user
@@ -15,6 +17,8 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+
+    redirect_to root_path
   end
 
 end

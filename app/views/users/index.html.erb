@@ -1,0 +1,9 @@
+  <% @users.each do |user| %>
+    <div class="user-cards">
+        <%= image_tag avatar_url(user.email), :class => 'card-image'unless user.email.nil?%>
+        <h1>Username</h1>
+        <p><%= user.username %></p>
+        <h1>Email</h1>
+        <p><%= user.email %></p>
+    </div>
+  <% end %>
