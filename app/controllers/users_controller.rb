@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
-  
+
+def logged_in
+  if current_user 
+    redirect_to log_out_path
+  end
+end
+
 def new
   @user = User.new
 end

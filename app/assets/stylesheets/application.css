@@ -12,37 +12,129 @@
  *= require_tree .
  */
 
-  html {
-    background: #06A2CB;
-    color: white;
-  }
-  .login_div {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    padding: 30px;
-    background: #DD1E2F;
-    border-radius: 8px 8px 8px 8px;
-    border-right: 1px solid #DADADA;
-    border-left: 1px solid #DADADA;
-    /*box-shadow: 10px 10px 5px #000000;*/
-  }
+  @charset "utf-8";
+/* CSS Document */
 
-  .popup_login, .login_div {
-  -webkit-animation: cssAnimation 1.6048s 1 ease;
-  -moz-animation: cssAnimation 1.6048s 1 ease;
-  -o-animation: cssAnimation 1.6048s 1 ease;
-  }
-  @-webkit-keyframes cssAnimation {
-  from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
-  to { -webkit-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
-  }
-  @-moz-keyframes cssAnimation {
-  from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
-  to { -moz-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
-  }
-  @-o-keyframes cssAnimation {
-  from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
-  to { -o-transform: rotate(0deg) scale(0.919) skew(1deg) translate(0px); }
-  }
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+  background-color: #C0C0C0;
+  color: #000;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+
+#logout, #login {
+  margin: 50px auto;
+  width: 400px;
+}
+
+#logout h2 {
+  background-color: #f95252;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#message, h2 ul {
+  background-color: #f95252;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#login h2 {
+  background-color: #f95252;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+  margin-right: 14px;
+}
+
+#login fieldset {
+  background-color: #fff;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 26px;
+}
+
+#login fieldset p {
+  color: #777;
+  margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+  margin-bottom: 0;
+}
+
+#login fieldset input {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"], #login fieldset input[type="text"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+  background-color: #33cc77;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+  background-color: #28ad63;
+}
