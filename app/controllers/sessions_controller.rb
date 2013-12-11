@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
-    redirect_to profile_path if current_user
+    redirect_to user_path(current_user) if current_user
   end
 
   def create

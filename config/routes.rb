@@ -10,7 +10,9 @@ RailsChat::Application.routes.draw do
     get "log_in" => "sessions#new", :as => "log_in"
     get "sign_up" => "users#new", :as => "sign_up"
     get "users" => "users#index", :as => "users"
-    get "profile" => "users#show", :as => "profile"
+    get "show" => "users#show", :as => "show"
+    match 'users/:id' => 'users#show'
+    post "send_message" => "users#send_message"
     # get "index" => "main#index", :as => "index"
     root :to => "sessions#new"
     resources :users

@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>RailsChat</title>
-  <%= stylesheet_link_tag    "application", "pusher-realtime-chat-widget/src/pusher-chat.css", :media => "all" %>
+  <%= stylesheet_link_tag    "application", "pusher-chat.css", :media => "all" %>
   <%= javascript_include_tag "http://code.jquery.com/jquery-1.7.1.min.js",
   							 "http://js.pusher.com/2.1/pusher.min.js",
-  							 "pusher-realtime-chat-widget/src/js/PusherChatWidget.js" %>
+  							 "PusherChatWidget.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,9 +17,9 @@
   <% if current_user %>
     <div id="navbar">
       <ul id="nav-menu">
-        <li><a href="#">Friends</a></li>
+        <li><%= link_to 'Home', user_path(current_user) %></li>
         <li><a href="#">Your Groups</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= link_to 'Other Users', users_path %></li>
       </ul>
 
       <ul id="settings-menu">
@@ -40,4 +40,17 @@
 <%= yield %>
 
 </body>
+<footer>
+
+    <div class="chat-module">
+      <script type="text/javascript">
+        $(function() {     
+          var pusher = new Pusher('32852f1ea786b1a3df0c');
+          var chatWidget = new PusherChatWidget(pusher, {
+            chatEndPoint: 'assets/chat.rb'
+          });
+        });
+      </script>
+    </div>
+</footer>
 </html>

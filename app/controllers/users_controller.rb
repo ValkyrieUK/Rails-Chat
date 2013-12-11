@@ -1,24 +1,31 @@
 class UsersController < ApplicationController
 
-def show
-  @user = User.find(current_user[:id])
-end
-
-def index
- @users = User.all
-end
-
-def new
-  @user = User.new
-end
-
-def create
-  @user = User.new(params[:user])
-  if @user.save
-    redirect_to root_url, :notice => "Signed up!"
-  else
-    render "new"
+ def send_message
+   Pusher['test_channel'].trigger('my_event', {
+      message: params["message"]
+    })
+   redirect_to profile_path(params[:user])
   end
-end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+  def index
+   @users = User.all
+  end
+
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      redirect_to root_url, :notice => "Signed up!"
+    else
+      render "new"
+    end
+  end
 
 end
