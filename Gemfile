@@ -27,8 +27,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-#Pusher gem for the chat
-gem 'pusher'
+
 gem 'jquery-rails'
 gem 'bcrypt-ruby'
 

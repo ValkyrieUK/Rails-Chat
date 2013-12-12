@@ -1,12 +1,5 @@
 class UsersController < ApplicationController
 
- def send_message
-   Pusher['test_channel'].trigger('my_event', {
-      message: params["message"]
-    })
-   redirect_to profile_path(params[:user])
-  end
-
   def show
     @user = User.find(params[:id])
   end
