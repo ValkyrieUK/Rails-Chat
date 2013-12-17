@@ -17,6 +17,7 @@ RailsChat::Application.routes.draw do
     # get "index" => "main#index", :as => "index"
     root :to => "sessions#new"
     resources :users
+    resources :messages
     resources :sessions
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

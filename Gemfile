@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'thin'
+# gem 'better_errors'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,6 +30,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'faye'
 gem 'private_pub'
 gem 'jquery-rails'
 gem 'bcrypt-ruby'

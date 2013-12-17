@@ -149,6 +149,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby
   coffee-rails (~> 3.2.1)
+  faye
   jquery-rails
   pg
   private_pub
