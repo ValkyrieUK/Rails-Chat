@@ -11,6 +11,7 @@ RailsChat::Application.routes.draw do
     get "sign_up" => "users#new", :as => "sign_up"
     get "users" => "users#index", :as => "users"
     get "show" => "users#show", :as => "show"
+    get "chat" => "messages#index", :as => "chat"
     match 'users/:id' => 'users#show'
     post "send_message" => "users#send_message"
     # get "index" => "main#index", :as => "index"

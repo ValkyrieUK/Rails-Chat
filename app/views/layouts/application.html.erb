@@ -2,10 +2,8 @@
 <html>
 <head>
   <title>RailsChat</title>
-  <%= stylesheet_link_tag    "application", "pusher-chat.css", :media => "all" %>
-  <%= javascript_include_tag "http://code.jquery.com/jquery-1.7.1.min.js",
-  							 "http://js.pusher.com/2.1/pusher.min.js",
-  							 "PusherChatWidget.js" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
