@@ -1,4 +1,6 @@
 <% publish_to "/messages/new" do %>
-  $("#chat").append("<%= j render(@message) %>");
-  $("#new_message")[0].reset();
+  $("#chat").append("<ul><%= @message.message %></ul>");
+  var divx = document.getElementById("chat");
+  divx.scrollTop = divx.scrollHeight;
 <% end %>
+  $("#new_message")[0].reset();

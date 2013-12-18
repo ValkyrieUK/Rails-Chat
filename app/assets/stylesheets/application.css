@@ -236,5 +236,16 @@ input {
 }
 
 #chat {
-  height: 250px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 12em;
+  max-width: 350px;
+  overflow-y: scroll;
+}
+
+#chat ul {
+  left: 0;
+  bottom: 0;
+  position: relative;
 }
