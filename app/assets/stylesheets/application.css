@@ -235,6 +235,6 @@ input {
   background-color: #f95252;
 }
 
-/*.chat-window {
-  padding: 5px;
-}*/
+#chat {
+  height: 250px;
+}
