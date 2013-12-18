@@ -4,6 +4,6 @@ A chat room application
 
 == Launching
 
--run rails s
+run rails s
 and in a new tab in the same dir
--run rackup private_pub.ru -s thin -E production
+run rackup private_pub.ru -s thin -E production
