@@ -1,6 +1,10 @@
 class MessagesController < ApplicationController
   def index
-    @messages = Message.all
+  	if current_user.present?
+	    @messages = Message.all
+  	else
+  	redirect_to root_url, notice: "Please log in to continue"
+	end
   end
 
   def create

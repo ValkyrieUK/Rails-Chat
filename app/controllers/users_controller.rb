@@ -1,11 +1,19 @@
 class UsersController < ApplicationController
 
   def show
-    @user = User.find(params[:id])
+    if current_user.present?
+      @user = User.find(params[:id])
+    else
+      redirect_to root_url, notice: "Please log in to continue"
+    end
   end
 
   def index
-   @users = User.all
+    if current_user.present?
+      @users = User.all
+    else
+    redirect_to root_url, notice: "Please log in to continue"
+    end
   end
 
   def new

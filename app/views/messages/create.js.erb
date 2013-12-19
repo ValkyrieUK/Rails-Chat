@@ -1,5 +1,5 @@
 <% publish_to "/messages/new" do %>
-  $("#chat").append("<ul><%= @message.user_username %><%= @message.message %><%= @message.created_at %></ul>");
+  $("#chat").append("<ul><%= @message.user_username %>&nbsp;<%= @message.message %>&nbsp;<%= @message.created_at %></ul>");
   var divx = document.getElementById("chat");
   divx.scrollTop = divx.scrollHeight;
 <% end %>
