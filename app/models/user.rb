@@ -1,5 +1,6 @@
 require 'bcrypt'
 class User < ActiveRecord::Base
+  has_many :message
   attr_accessible :password, :username, :email, :password_confirmation
   attr_accessor :password
   before_save :encrypt_password

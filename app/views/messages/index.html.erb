@@ -1,9 +1,11 @@
 <h1>Chat</h1>
 
 <div id="chat">
-  <% @messages.each do |m|%>
+  <% @messages.map do |m|%>
     <ul>
+      <%= m.user_username %>
       <%= m.message %>
+      <%= m.created_at %>
     </ul>
   <% end %>
 </div>

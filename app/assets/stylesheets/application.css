@@ -19,12 +19,12 @@
 /* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
 /* ---------- http://weloveiconfonts.com/ ---------- */
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
 
 /* ---------- ERIC MEYER'S RESET CSS ---------- */
 /* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
 
-@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+/*@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);*/
 
 /* ---------- FONTAWESOME ---------- */
 
@@ -32,11 +32,11 @@
   font-family: 'Varela Round';
   font-style: normal;
   font-weight: 400;
-  src: local('Varela Round'), local('VarelaRound-Regular'), url(http://themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+  /*src: local('Varela Round'), local('VarelaRound-Regular'), url(http://themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');*/
 }
 
 [class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+  /*font-family: 'FontAwesome', sans-serif;*/
 }
 
 /* ---------- GENERAL ---------- */
